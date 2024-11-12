@@ -1,9 +1,13 @@
 //import { useState } from 'react'
 import './App.css'
+import React from "react";
 import MovieCard from './components/MovieCard'
 import Movies from './components/movies'
 import RatingStar from "./components/RatingStar";
 import MovieNavbar from './components/MovieNavbar'
+import ReactStars from "react-rating-stars-component";
+import { render } from "react-dom";
+ 
 
 
 function App() {
@@ -14,7 +18,20 @@ function App() {
     <> 
     <MovieNavbar/>
     <div>
-      <RatingStar iconSize={50} defaultRating={defaultRating} />
+    const ratingChanged = (newRating) => {
+  console.log(newRating);
+};
+ 
+render(
+  <ReactStars
+    count={5}
+    onChange={ratingChanged}
+    size={24}
+    activeColor="#ffd700"
+  />,
+ 
+  document.getElementById("where-to-render")
+);
     </div>
 
     <div className="row">
