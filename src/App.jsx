@@ -1,7 +1,14 @@
 import "./App.css";
+import MovieCard from "./components/MovieCard";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <div className="App">
+        <MovieCard />
+      </div>
+    </>
+  );
 }
 
 export default App;
