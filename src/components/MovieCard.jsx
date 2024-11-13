@@ -1,3 +1,4 @@
+import "./MovieCard.css"
 
 function MovieCard({ title, poster_path }) {
   return (
@@ -8,7 +9,7 @@ function MovieCard({ title, poster_path }) {
         className="card-img-top"
         alt={title}
       />
-      <div className='overlay '>
+      <div className='overlay'>
                         {title}  
                     </div>
 
