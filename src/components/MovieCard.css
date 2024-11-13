@@ -1,20 +1,19 @@
 
 .movie {
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s;/*para que quede una transicion mas fluida*/
   
 }
 .movie:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /*es lo que hace que haga zoom*/
 }
-.movie:hover .overlay {
+.movie:hover .overlay { /*vincula ambos eventos*/
   opacity: 1;
 }
 .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
- 
   opacity: 0;
   bottom: 0;
   font-size: 20px;

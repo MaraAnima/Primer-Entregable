@@ -20,7 +20,7 @@ function MovieList() {
 
       <div className="row">
     {movies.map((movie) => (
-      
+      /*Puse el formato de como se muestran las peliculas en otro componente para que quede mas limpio, ademas facilita ponerle hovers*/
       <div key={movie.id} className=" col-2 mt-4 mb-4">
         <MovieCard
           title={movie.title}
