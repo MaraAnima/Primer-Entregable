@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { useState } from "react";
 import "./RatingStar.css";
@@ -55,3 +56,27 @@ export default function RatingStar({ count, defaultRating, icon, color, iconSize
     );
   }
 >>>>>>> parent of f3cc74e (Rating Stars)
+=======
+import ReactStars from "react-rating-stars-component";
+import React from "react";
+import { render } from "react-dom";
+
+const ratingChanged = (newRating) => {
+  console.log(newRating);
+};
+
+render(
+  <ReactStars
+    count={5}
+    onChange={ratingChanged}
+    size={24}
+    isHalf={true}
+    emptyIcon={<i className="far fa-star"></i>}
+    halfIcon={<i className="fa fa-star-half-alt"></i>}
+    fullIcon={<i className="fa fa-star"></i>}
+    activeColor="#ffd700"
+  />,
+
+  document.getElementById("where-to-render")
+);
+>>>>>>> 34170593fbf42db02e4bead9f23e16827b6a1043
