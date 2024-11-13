@@ -1,9 +1,8 @@
 
 function MovieCard({ title, poster_path }) {
   return (
-    <div className="">
-
-    <div className="container" style={{ width: '18rem' }}>
+    <div className="container">
+    <div className=" movie" >
       <img
         src={`https://image.tmdb.org/t/p/w500${poster_path}`}
         className="card-img-top"

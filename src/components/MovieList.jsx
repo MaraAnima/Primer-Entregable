@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
-import './MovieList.css'
+
 
 function MovieList() {
   const [movies, setMovies] = useState([]);
@@ -21,7 +21,7 @@ function MovieList() {
       <div className="row">
     {movies.map((movie) => (
       
-      <div key={movie.id} className="movie col-2 mt-4 mb-4">
+      <div key={movie.id} className=" col-2 mt-4 mb-4">
         <MovieCard
           title={movie.title}
           poster_path={movie.poster_path}
