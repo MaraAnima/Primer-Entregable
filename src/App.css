@@ -1,24 +1,5 @@
-<<<<<<< HEAD
-=======
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(201, 132, 174);
 }
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
->>>>>>> 34170593fbf42db02e4bead9f23e16827b6a1043
-.movie {
-  cursor: pointer;
-  transition: all 0.1s linear;
-}
-.movie:hover {
-  transform: scale(1.1);
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 34170593fbf42db02e4bead9f23e16827b6a1043
