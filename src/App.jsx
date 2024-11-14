@@ -6,14 +6,13 @@ import MovieBanner from "./components/MovieBanner";
 function App() {
   return (
     <>
-     
-    <div className="container">
-    <MovieBanner/>
-    <RatingStar />
+      <div>
+        <MovieBanner />
+      </div>
+      <div className="container">
+        <RatingStar />
         <MovieList />
-        
-        </div>
-       
+      </div>
     </>
   );
 }
