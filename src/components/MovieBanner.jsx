@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./MovieBanner.css";
-import header from "./components/header";
 
 function MovieBanner() {
   useEffect(() => {
@@ -37,12 +36,7 @@ function MovieBanner() {
       </ol>
       <div className="carousel-inner photo">
         <div className="carousel-item active">
-          <img
-            className="d-block w-100 imgChange"
-            img
-            src={header}
-            alt="First slide"
-          />
+          <img className="d-block w-100 imgChange" alt="First slide" />
         </div>
         <div className="carousel-item">
           <img
