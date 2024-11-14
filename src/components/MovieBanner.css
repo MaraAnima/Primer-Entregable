@@ -1,1 +1,10 @@
+.photo {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+}
 
+.imgChange {
+  height: 300px;
+  object-fit: cover;
+}

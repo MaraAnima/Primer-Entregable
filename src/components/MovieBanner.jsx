@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./MovieBanner.css";
+import header from "./components/header";
 
 function MovieBanner() {
   useEffect(() => {
@@ -34,11 +35,12 @@ function MovieBanner() {
           className="visually-hidden"
         ></li>
       </ol>
-      <div className="carousel-inner">
+      <div className="carousel-inner photo">
         <div className="carousel-item active">
           <img
-            className="d-block w-100"
-            src="https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/7ea4c12952a5fdea67c375b4b2fcacb5.jpg"
+            className="d-block w-100 imgChange"
+            img
+            src={header}
             alt="First slide"
           />
         </div>
