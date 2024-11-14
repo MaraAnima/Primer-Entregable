@@ -7,8 +7,10 @@ import MovieNavbar from "./components/MovieNavbar"
 function App() {
   return (
     <>
-      <MovieNavbar/>
-        <MovieBanner />
+     <MovieNavbar/>
+    <div className="banner"> <MovieBanner /></div>
+     
+        
       <div className="container">
         <RatingStar />
         <MovieList />
