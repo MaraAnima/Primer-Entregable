@@ -4,14 +4,17 @@ function MovieNavbar() {
     return (
         <>
         <div> 
-        <header className="header">
-            <img src="" alt="" className="" />
-            <nav>
-                <ul>
-                    <a href="/">Home</a>
-                </ul>
-            </nav>
-        </header>
+        <header>
+    <div class="container">
+      <img src="" className="logo" alt="" />
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
         </div>
         </>
 
