@@ -6,6 +6,7 @@ function MovieNavbar() {
         <div> 
         <header>
     <div class="container">
+
       <img src="" className="logo" alt="" />
 
       <nav>
@@ -17,7 +18,6 @@ function MovieNavbar() {
   </header>
         </div>
         </>
-
     )
 
 }
