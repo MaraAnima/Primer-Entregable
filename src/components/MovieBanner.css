@@ -1,9 +1,0 @@
-.imgChange {
-  height: 300px;
-  object-fit: cover;
-}
-
-div.carousel-item img {
-  height: 250px;
-  object-fit: cover;
-}

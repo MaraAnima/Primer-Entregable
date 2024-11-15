@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./MovieBanner.css";
 import header from "../assets/img/header.jpg";
 
 function MovieBanner() {

@@ -1,4 +1,4 @@
-import "./MovieCard.css"
+
 function MovieCard({ title, poster_path }) {
   return (
   

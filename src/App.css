@@ -1,5 +1,60 @@
 body {
   text-align: center;
-  padding: 20px;
   background-image: url(components/prob6.jpg);
+}
+
+/* MovieBanner*/
+.imgChange {
+  height: 300px;
+  object-fit: cover;
+}
+
+div.carousel-item img {
+  height: 250px;
+  object-fit: cover;
+}
+/* MovieCard*/
+.movie {
+  cursor: pointer;
+  transition: transform 0.2s;/*para que quede una transicion mas fluida*/
+  
+}
+.movie:hover {
+  transform: scale(1.1); /*es lo que hace que haga zoom*/
+}
+.movie:hover .overlay { /*vincula ambos eventos*/
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+/* MovieNavbar*/
+
+.header {
+  background: rgba(191, 180, 180, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* RatingStar*/
+.Star{
+  color: white;
+}
+
+.Box {
+  background: rgba( 92, 92, 92, 0.3);
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
