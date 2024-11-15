@@ -1,12 +1,12 @@
+import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
 import "./RatingStar.css";
 
-export function RatingStar({ rating, setRating, setMovies }) {
+export function RatingStar() {
+  const [rating, setRating] = useState(0);
+
   const handleRating = (rate) => {
     setRating(rate);
-
-    console.log("Rating seleccionado:", rate);
-    // https://api.themoviedb.org/3/discover/movie?page=1&sort_by=popularity.desc&vote_average.gte=${rating}&vote_count.gte=40
   };
 
   return (
