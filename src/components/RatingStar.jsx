@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
 import "./RatingStar.css";
 
-export function RatingStar() {
-  const [rating, setRating] = useState(0);
-
+export function RatingStar({ rating, setRating }) {
   const handleRating = (rate) => {
-    setRating(rate);
+    setRating(rate * 2 - 2);
+
+    console.log(rating);
   };
 
   return (
