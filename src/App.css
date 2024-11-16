@@ -1,5 +1,130 @@
 body {
   text-align: center;
+  background-image: url(components/prob6.jpg);
+  margin: 0;
+}
+
+/* MovieBanner*/
+.imgChange {
+  height: 300px;
+  object-fit: cover;
+}
+
+div.carousel-item img {
+  height: 400px;
+}
+/* MovieCard*/
+.movie {
+  cursor: pointer;
+  transition: transform 0.2s;/*para que quede una transicion mas fluida*/
+  
+}
+.movie:hover {
+  transform: scale(1.1); /*es lo que hace que haga zoom*/
+}
+.movie:hover .overlay { /*vincula ambos eventos*/
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
   padding: 20px;
-  background-image: url(components/prob7.jpg);
+  text-align: center;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+/* MovieNavbar*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #d68f55;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  padding-bottom: 10px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+
+  height: 5px;
+  background-color: #ffa7a7;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+/* RatingStar*/
+.Star{
+  color: white;
+}
+
+.Box {
+  background: rgba( 92, 92, 92, 0.3);
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }

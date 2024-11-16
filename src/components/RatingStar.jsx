@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
-import "./RatingStar.css";
+
 
 export function RatingStar({ rating, setRating }) {
   const handleRating = (rate) => {
