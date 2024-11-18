@@ -1,28 +1,30 @@
 body {
   text-align: center;
-  background-image: url(components/prob6.jpg);
+  background-image: url(assets/img/fondo5.png);
   margin: 0;
+  object-fit: cover;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
 }
 
 /* MovieBanner*/
-.imgChange {
-  height: 300px;
+div.carousel-item img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-div.carousel-item img {
-  height: 400px;
-}
 /* MovieCard*/
 .movie {
   cursor: pointer;
-  transition: transform 0.2s;/*para que quede una transicion mas fluida*/
-  
+  transition: transform 0.2s; /*para que quede una transicion mas fluida*/
 }
 .movie:hover {
   transform: scale(1.1); /*es lo que hace que haga zoom*/
 }
-.movie:hover .overlay { /*vincula ambos eventos*/
+.movie:hover .overlay {
+  /*vincula ambos eventos*/
   opacity: 1;
 }
 .overlay {
@@ -38,25 +40,25 @@ div.carousel-item img {
   transition: opacity 0.3s ease;
 }
 /* MovieNavbar*/
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 
 .container {
-	width: 80%;
-	margin: 0 auto;
-  font-family: 'Work Sans', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
   font-weight: 800;
 }
 .container {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
-  background: #d68f55;
+  background: #3f0a0a;
 }
 
 header::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -86,10 +88,11 @@ nav li {
 }
 
 nav a {
-  color: #444;
+  color: #f16c6c;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 nav a:hover {
@@ -97,11 +100,11 @@ nav a:hover {
 }
 
 nav a::before {
-  content: '';
+  content: "";
   display: block;
 
   height: 5px;
-  background-color: #ffa7a7;
+  background-color: #e15050;
 
   position: absolute;
   top: 0;
@@ -113,18 +116,17 @@ nav a:hover::before {
   width: 100%;
 }
 
-
-
 /* RatingStar*/
-.Star{
+.Star {
   color: white;
 }
 
 .Box {
-  background: rgba( 92, 92, 92, 0.3);
+  background: rgba(92, 92, 92, 0.3);
   width: 100%;
   font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.549);
 }

@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import header from "../assets/img/header.jpg";
+import hseason from "../assets/img/hseason.png";
+import BuscáHeader from "../assets/img/BuscáHeader.png";
+import TusHeader from "../assets/img/TusHeader.png";
 
 function MovieBanner() {
   useEffect(() => {
@@ -36,21 +38,13 @@ function MovieBanner() {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img className="d-block w-100" src={header} alt="First slide" />
+          <img className="d-block w-100" src={hseason} alt="First slide" />
         </div>
         <div className="carousel-item">
-          <img
-            className="d-block w-100"
-            src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2019/09/Refresh_10_Halloween_Facts.png?resize=640%2C360"
-            alt="Second slide"
-          />
+          <img className="d-block w-100" src={TusHeader} alt="Second slide" />
         </div>
         <div className="carousel-item">
-          <img
-            className="d-block w-100"
-            src="https://media.newyorker.com/photos/6515ba377ef26f0f1de6985a/master/w_2560%2Cc_limit/shouts-elson-spooky%2520season.jpg"
-            alt="Third slide"
-          />
+          <img className="d-block w-100" src={BuscáHeader} alt="Third slide" />
         </div>
       </div>
       <a

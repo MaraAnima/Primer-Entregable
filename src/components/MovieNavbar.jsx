@@ -1,24 +1,22 @@
-
-
 function MovieNavbar() {
-    return (
-        <>
-        <div> 
+  return (
+    <>
+      <div>
         <header>
-    <div class="container">
-      <img src="" className="logo" alt="" />
+          <div class="container">
+            <img src="" className="logo" alt="" navcss />
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-        </div>
-        </>
-
-    )
-
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </>
+  );
 }
 export default MovieNavbar;
