@@ -1,11 +1,12 @@
+import logoHack1 from "../assets/img/logoHack1.png";
+
 function MovieNavbar() {
   return (
     <>
       <div>
         <header>
-          <div class="container">
-            <img src="" className="logo" alt="" navcss />
-
+          <img src={logoHack1} className="logo" alt="" />
+          <div className="container">
             <nav>
               <ul>
                 <li>
