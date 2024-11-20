@@ -6,6 +6,7 @@ import MovieNavbar from "./MovieNavbar";
 import MovieDetails from "./MovieDetails";
 import MovieCard from "../MovieCard";
 
+
 function Home() {
   const [rating, setRating] = useState(0);
 
