@@ -1,25 +1,26 @@
 import "./App.css";
-import MovieList from "./components/MovieList";
-import RatingStar from "./components/RatingStar";
-import MovieBanner from "./components/MovieBanner";
-
-import { useState } from "react";
-
-import MovieNavbar from "./components/MovieNavbar";
+import MovieDetails from "./components/Page/MovieDetails";
+import Movie from "./components/Page/Movie";
+import Error404 from "./components/Page/Error404";
+import Home from "./components/Page/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-  const [rating, setRating] = useState(0);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/Movie/:id",
+      element: <Movie />,
+    },
+    {
+      path: "*",
+      element: <Error404 />,
+    },
+  ]);
 
-  return (
-    <>
-      <MovieNavbar />
-      <MovieBanner />
-      <div className="container">
-        <RatingStar rating={rating} setRating={setRating} />
-        <MovieList rating={rating} />
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
-
 export default App;
