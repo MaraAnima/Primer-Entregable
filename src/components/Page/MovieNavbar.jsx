@@ -5,7 +5,9 @@ function MovieNavbar() {
     <>
       <div>
         <header>
+          <Link to = "/">
           <img src="src/assets/img/logoHack1.png" className="logo" alt="" />
+          </Link>
           <div className="container">
             <nav>
               <ul>

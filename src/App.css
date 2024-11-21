@@ -1,7 +1,7 @@
 body {
   text-align: center;
   background-image: url(assets/img/fondo5.png);
-  margin: 0;
+
   object-fit: cover;
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-size: cover; /* Hace que la imagen cubra todo el fondo */
@@ -40,7 +40,7 @@ div.carousel-item img {
   transition: opacity 0.3s ease;
 }
 /* MovieNavbar*/
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+
 
 .container {
   width: 80%;
@@ -128,4 +128,26 @@ nav a:hover::before {
   padding: 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.549);
+}
+/*About Us*/
+
+.defaultBox{
+width: 100%;
+padding: 20%;
+background-color: rgba(100, 91, 91, 0.5);
+margin-bottom: 5%;
+margin-top: 5%;
+border-radius: 10px;
+}
+/*Footer*/
+.footer{
+  background-color: #3f0a0a;
+  padding: 10px 0;
+  width: 100%;
+}
+/*Error404*/
+.Error{
+  background-image: url(assets/img/terrifying-hands-silhouettes-studio.jpg);
+
+  background-position: center;
 }

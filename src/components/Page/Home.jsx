@@ -3,8 +3,6 @@ import RatingStar from "../RatingStar";
 import MovieBanner from "../MovieBanner";
 import { useState } from "react";
 import MovieNavbar from "./MovieNavbar";
-import MovieDetails from "./MovieDetails";
-import MovieCard from "../MovieCard";
 
 
 function Home() {
@@ -17,6 +15,7 @@ function Home() {
       <div className="container">
         <RatingStar rating={rating} setRating={setRating} />
         <MovieList rating={rating} />
+
       </div>
     </>
   );

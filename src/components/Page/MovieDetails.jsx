@@ -21,7 +21,7 @@ function MovieDetails() {
 
   return (
   <>
-  <h1>uwu</h1>
+ <h1>UwU</h1>
   </>
 )
 }
