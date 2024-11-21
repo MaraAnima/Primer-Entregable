@@ -1,5 +1,5 @@
-function Movie() {
-  return <h1>"hola q tal prrrrrrrro"</h1>;
+function Movie({ title }) {
+  return <h1>{title}</h1>;
 }
 
 export default Movie;
