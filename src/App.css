@@ -19,6 +19,9 @@ div.carousel-item img {
 .movie {
   cursor: pointer;
   transition: transform 0.2s; /*para que quede una transicion mas fluida*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
 }
 .movie:hover {
   transform: scale(1.1); /*es lo que hace que haga zoom*/
@@ -40,7 +43,6 @@ div.carousel-item img {
   transition: opacity 0.3s ease;
 }
 /* MovieNavbar*/
-
 
 .container {
   width: 80%;
@@ -124,29 +126,30 @@ nav a:hover::before {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
   font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.549);
 }
 /*About Us*/
 
-.defaultBox{
-width: 100%;
-padding: 20%;
-background-color: rgba(100, 91, 91, 0.5);
-margin-bottom: 5%;
-margin-top: 5%;
-border-radius: 10px;
+.defaultBox {
+  width: 100%;
+  padding: 20%;
+  background-color: rgba(100, 91, 91, 0.5);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border-radius: 10px;
 }
 /*Footer*/
-.footer{
+.footer {
   background-color: #3f0a0a;
   padding: 10px 0;
   width: 100%;
 }
 /*Error404*/
-.Error{
+.Error {
   background-image: url(assets/img/terrifying-hands-silhouettes-studio.jpg);
 
   background-position: center;

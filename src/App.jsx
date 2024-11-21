@@ -11,23 +11,23 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home/>,
+      element: <Home />,
     },
     {
       path: "/AboutUs",
-      element: <AboutUs/>,
+      element: <AboutUs />,
     },
     {
       path: "/Contact",
-      element: <Contact/>,
+      element: <Contact />,
     },
     {
       path: "/movie/:id",
-      element: <MovieDetails/>,
+      element: <MovieDetails />,
     },
     {
       path: "*",
-      element: <Error404/>,
+      element: <Error404 />,
     },
   ]);
 
