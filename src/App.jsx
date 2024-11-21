@@ -1,11 +1,12 @@
 import "./App.css";
-import MovieDetails from "./components/Page/MovieDetails";
-import Movie from "./components/Page/Movie";
-import AboutUs from "./components/Page/AboutUs";
-import Contact from "./components/Page/Contact";
-import Error404 from "./components/Page/Error404";
-import Home from "./components/Page/Home";
+import MovieDetails from "./components/pages/MovieDetails";
+import Movie from "./components/pages/Movie";
+import AboutUs from "./components/pages/AboutUs";
+import Contact from "./components/pages/Contact";
+import Error404 from "./components/pages/Error404";
+import Home from "./components/pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Recomendations from "./components/pages/Recomendations";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
     {
       path: "/movie/:id",
       element: <MovieDetails />,
+    },
+    {
+      path: "/Recomendations",
+      element: <Recomendations />,
     },
     {
       path: "*",

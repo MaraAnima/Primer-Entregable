@@ -21,6 +21,9 @@ function MovieNavbar() {
                   <Link to="/Contact">Contact</Link>
                 </li>
               </ul>
+              <li>
+                <Link to="/Recomendations">Recomendations</Link>
+              </li>
             </nav>
           </div>
         </header>
