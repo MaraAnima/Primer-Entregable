@@ -4,7 +4,6 @@ import MovieBanner from "../MovieBanner";
 import { useState } from "react";
 import MovieNavbar from "./MovieNavbar";
 
-
 function Home() {
   const [rating, setRating] = useState(0);
 
@@ -13,9 +12,12 @@ function Home() {
       <MovieNavbar />
       <MovieBanner />
       <div className="container">
-        <RatingStar rating={rating} setRating={setRating} />
-        <MovieList rating={rating} />
-
+        <div className="row">
+          <div className="col-12">
+            <RatingStar rating={rating} setRating={setRating} />
+            <MovieList rating={rating} />
+          </div>
+        </div>
       </div>
     </>
   );
