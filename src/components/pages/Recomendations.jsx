@@ -1,20 +1,20 @@
-import Data from "../Data/Data";
-import MovieRecomendation from "./MovieRecomendations";
+import React from "react";
+import data from "../data/data"; // Assuming 'data' is an array of movie objects
+import MovieRecomendation from "./MovieRecomendations"; // Import your MovieRecomendation component
 
 function Recomendations() {
   return (
-    <>
-      <div className="defaultBox container row">
-        {Data.map((movieRecomendation) => (
-          <div className="col-4 mb-4" key={movieRecomendation.id}>
-            <MovieRecomendation
-              name={movieRecomendation.name}
-              poster_path={movieRecomendation.poster_path}
-            />
-          </div>
-        ))}
-      </div>
-    </>
+    <div className="recomendations-container">
+      {data.map((movie) => (
+        <MovieRecomendation
+          key={movie.id}
+          title={movie.title}
+          poster_path={movie.poster_path}
+          plot={movie.plot}
+        />
+      ))}
+    </div>
   );
 }
+
 export default Recomendations;
