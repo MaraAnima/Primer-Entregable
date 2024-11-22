@@ -154,3 +154,7 @@ nav a:hover::before {
 
   background-position: center;
 }
+/*RecomendationsMovie*/
+.imgSize {
+  object-fit: cover;
+}

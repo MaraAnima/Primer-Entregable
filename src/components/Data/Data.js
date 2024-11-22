@@ -4,7 +4,7 @@ const data = [
     title: "Hocus Pocus",
     plot: "Hocus Pocus is about three witches named Winifred, Sarah, and Mary who were executed in Salem back in 1693. They’re brought backto life in modern-day Salem when a teenager named Max accidentallylights a magical candle. The witches want to steal the life force of children to stay young forever. Max, his little sister Dani, and their friend Allison team up to stop them. With the help of a talking cat named Binx (who's been cursed for centuries), they outsmart the witches.",
     poster_path:
-      "https://lumiere-a.akamaihd.net/v1/images/p_hocuspocus_19880_e000b013.jpeg",
+      "https://image.tmdb.org/t/p/original/by4D4Q9NlUjFSEUA1yrxq6ksXmk.jpg",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const data = [
     title: "Coraline",
     plot: "Coraline tells the story of a little girl named CoralineJones who feels dissatisfied with her life. Her family moves into anold house that has been divided into apartments. Coraline discovers asecret door in her new home that leads to an alternate world, whereeverything is more colorful and attractive. However, she soon realizesthat this world is not as perfect as it seems, and she must confrontthe evil Other Mother to save her real parents and herself.",
     poster_path:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSzQNvFocO73fzZ2_MypyxQXZgeYB6N0B2A&s",
+      "https://image.tmdb.org/t/p/original/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
   },
   {
     id: 5,
@@ -46,14 +46,14 @@ const data = [
     title: "Hereditary",
     plot: "Hereditary follows the Graham family as they struggle withprofound grief and unsettling secrets after the death of theirmatriarch. Supernatural forces take hold of the family, leading tohorrific events as they uncover their dark legacy, culminating in ashocking and haunting climax.",
     poster_path:
-      "https://musicart.xboxlive.com/7/a6e35000-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
+      "https://image.tmdb.org/t/p/original/p9fmuz2Oj3HtEJEqbIwkFGUhVXD.jpg",
   },
   {
     id: 8,
     title: "Corpse Bride",
     plot: "Corpse Bride tells the story of Victor Van Dort, a shyyoung man who accidentally marries a ghost while practicing his weddingvows in the woods. Taken into the underworld, he learns about theCorpse Bride's sad past and finds himself torn between hisresponsibilities to the living and the connection he feels with her.",
     poster_path:
-      "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p36328_p_v10_aj.jpg",
+      "https://image.tmdb.org/t/p/original/isb2Qow76GpqYmsSyfdMfsYAjts.jpg",
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ const data = [
     title: "Harry Potter",
     plot: "The Harry Potter saga follows a young wizard and his    friends as they face various challenges over the years, ultimately    focusing on Harry's fight against the dark wizard Lord Voldemort, who    seeks to conquer the world.",
     poster_path:
-      "https://cms.rhinoshield.app/public/images/ip_page_harry_potter_icon_3b529228e6.jpg",
+      "https://image.tmdb.org/t/p/w600_and_h900_bestv2/eVPs2Y0LyvTLZn6AP5Z6O2rtiGB.jpg",
   },
   {
     id: 13,
