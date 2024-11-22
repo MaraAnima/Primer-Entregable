@@ -9,6 +9,16 @@ function MovieNavbar() {
             <img src="src/assets/img/logoHack1.png" className="logo" alt="" />
           </Link>
           <div className="container">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  className="botonBuscar"
+                  placeholder="Buscar películas por título..."
+                />
+                <button>🔍︎</button>
+              </li>
+            </ul>
             <nav>
               <ul>
                 <li>
