@@ -23,7 +23,11 @@ function MovieDetails() {
 
   return (
     <>
-      <Movie title={moviePage.title} />
+      <Movie
+        title={moviePage.title}
+        poster_path={moviePage.poster_path}
+        overview={moviePage.overview}
+      />
     </>
   );
 }

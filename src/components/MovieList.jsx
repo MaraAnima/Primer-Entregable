@@ -48,16 +48,13 @@ function MovieList({ rating }) {
         <div className="row">
           {movies.map((movie) => (
             <div key={movie.id} className="col-3 mt-4 mb-4">
-              
               <MovieCard
                 title={movie.title}
                 poster_path={movie.poster_path}
                 vote_average={movie.vote_average}
                 id={movie.id}
               />
-               <div>
-                
-                 </div>
+              <div></div>
             </div>
           ))}
         </div>

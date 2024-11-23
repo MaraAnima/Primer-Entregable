@@ -1,11 +1,11 @@
 body {
   text-align: center;
-  background-image: url(assets/img/fondo5.png);
+  background-color: #281212;
 
   object-fit: cover;
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-size: cover; /* Hace que la imagen cubra todo el fondo */
-  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* MovieBanner*/
@@ -63,7 +63,7 @@ div.carousel-item img {
   margin: 0 auto;
 }
 
-header {
+.header {
   background: #3f0a0a;
 }
 
@@ -151,6 +151,7 @@ nav a:hover::before {
   background-color: #3f0a0a;
   padding: 10px 0;
   width: 100%;
+  display: block;
 }
 /*Error404*/
 .Error {
@@ -160,4 +161,26 @@ nav a:hover::before {
 /*RecomendationsMovie*/
 .imgSize {
   object-fit: cover;
+}
+/*Movie Details*/
+.detailsBox {
+  width: 100%;
+  padding: 8%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: hwb(0 11% 88% / 0.607);
+  border-radius: 2%;
+  border-style: outset;
+  border-color: black;
+}
+
+.posterImg {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+}
+.title {
+  justify-content: center;
 }
