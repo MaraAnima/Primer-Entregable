@@ -12,28 +12,24 @@ function MovieRecomendation({ title, poster_path, plot }) {
   const onCloseModal = () => {
     setIsOpen(false);
   };
+
   return (
     <>
-      <div className="container fluid">
-        <div className="row">
-          <div className="col-12">
-            <div className="recomendationsMovie mb-5 movie ">
-              <img
-                className="card-img-top imgSize"
-                onClick={onOpenModal}
-                src={poster_path}
-                alt=""
-              />
-              <div className="overlay">{title}</div>
-              <Modal open={isOpen} onClose={onCloseModal}>
-                <h2>{title}</h2>
-                <p>{plot}</p>
-              </Modal>
-            </div>
-          </div>
-        </div>
+      <div className="movie">
+        <img
+          className="card-img-top"
+          onClick={onOpenModal}
+          src={poster_path}
+          alt={title}
+        />
+        <div className="overlay">{title}</div>
+        <Modal open={isOpen} onClose={onCloseModal}>
+          <h2>{title}</h2>
+          <p>{plot}</p>
+        </Modal>
       </div>
     </>
   );
 }
+
 export default MovieRecomendation;

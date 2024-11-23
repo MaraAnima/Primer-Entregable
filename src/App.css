@@ -15,37 +15,41 @@ div.carousel-item img {
   object-fit: cover;
 }
 
-/* MovieCard*/
+/*MovieCard*/
 .movie {
   cursor: pointer;
-  transition: transform 0.2s; /*para que quede una transicion mas fluida*/
+  transition: transform 0.2s;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 100;
+  position: relative; /* Ensure the overlay is positioned relative to this container */
 }
+
 .movie:hover {
-  transform: scale(1.1); /*es lo que hace que haga zoom*/
+  transform: scale(1.1); /* Apply zoom effect */
 }
-.movie:hover .overlay {
-  /*vincula ambos eventos*/
-  opacity: 1;
-}
+
 .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  opacity: 0;
-  bottom: 0;
+  opacity: 0; /* Make the overlay hidden initially */
+  bottom: 0; /* Position the overlay at the bottom */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make the overlay take full width */
+  height: 10%; /* You can adjust this to your preference (e.g., 25% of the card height) */
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   color: white;
   transition: opacity 0.3s ease;
 }
-/* MovieNavbar*/
 
+.movie:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+/* MovieNavbar*/
 .container {
-  width: 80%;
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
@@ -151,7 +155,6 @@ nav a:hover::before {
 /*Error404*/
 .Error {
   background-image: url(assets/img/terrifying-hands-silhouettes-studio.jpg);
-
   background-position: center;
 }
 /*RecomendationsMovie*/
