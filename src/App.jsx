@@ -15,11 +15,11 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/AboutUs",
+      path: "/about-us",
       element: <AboutUs />,
     },
     {
-      path: "/Contact",
+      path: "/contact",
       element: <Contact />,
     },
     {
@@ -27,7 +27,7 @@ function App() {
       element: <MovieDetails />,
     },
     {
-      path: "/Recomendations",
+      path: "/recomendations",
       element: <Recomendations />,
     },
     {

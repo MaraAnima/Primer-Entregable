@@ -4,7 +4,8 @@ function AboutUs() {
   return (
     <>
       <MovieNavbar />
-      <div className="defaultBox container">
+
+      <div className="defaultBox">
         <h1>About Us</h1>
         <p>
           Lore ipsum dolor sit amet consectetu adipisicing elit. Modi beatae id,
@@ -13,6 +14,7 @@ function AboutUs() {
           Molestias quo totam commodi pariatur est aliquam nam, saepe quibusdam!
         </p>
       </div>
+
       <Foot />
     </>
   );

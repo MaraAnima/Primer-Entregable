@@ -6,7 +6,7 @@ import Movie from "./Movie";
 function MovieDetails() {
   const { id } = useParams();
   console.log(id);
-  const [moviePage, setMoviePage] = useState(null);
+  const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     const moviePageFetch = async () => {
@@ -14,19 +14,20 @@ function MovieDetails() {
         `https://api.themoviedb.org/3/movie/${id}?api_key=33351da04ac1d34c5939d977f66571b0&language=en-US`
       );
       const data = response.data;
-      setMoviePage(data);
+      setMovie(data);
     };
     moviePageFetch();
   }, [id]);
 
-  if (!moviePage) return <p>Loading...</p>;
+  if (!movie) return <p>Loading...</p>;
 
   return (
     <>
       <Movie
-        title={moviePage.title}
-        poster_path={moviePage.poster_path}
-        overview={moviePage.overview}
+        title={movie.title}
+        poster_path={movie.poster_path}
+        overview={movie.overview}
+        release_date={movie.release_date}
       />
     </>
   );

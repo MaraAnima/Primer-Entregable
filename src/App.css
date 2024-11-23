@@ -42,22 +42,20 @@ div.carousel-item img {
 }
 
 /* MovieNavbar*/
-.container {
-  margin: 0 auto;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 800;
-}
+
 .logo {
   width: 4%;
   float: left;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
 
 .header {
   background: #3f0a0a;
+}
+
+.botonBuscar {
+  color: #f16c6c;
+  background-color: #3f0a0a;
+  border-color: #281212;
 }
 
 header::after {
@@ -103,7 +101,6 @@ nav a::before {
 
   height: 5px;
   background-color: #e15050;
-
   position: absolute;
   top: 0;
   width: 0%;
@@ -120,23 +117,24 @@ nav a:hover::before {
 }
 
 .Box {
-  background: rgba(0, 0, 0, 0.1);
   width: 100%;
   font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   padding: 20px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.549);
 }
-/*About Us*/
+/*About Us y Contact*/
+
+.container {
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
 
 .defaultBox {
-  width: 100%;
-  padding: 20%;
   background-color: rgba(100, 91, 91, 0.5);
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin: 7%;
+  padding: 15%;
   border-radius: 10px;
 }
 /*Footer*/
@@ -156,20 +154,20 @@ nav a:hover::before {
 .despuesveo {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .movie-content {
   flex: 1;
   display: flex;
   width: 80%;
-  max-width: 200rem;
+  max-width: 150rem;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   background-color: #0000004b;
   color: #fff;
-  margin-bottom: 5%;
+  margin-bottom: 11%;
+
   margin-top: 5%;
 }
 
@@ -182,15 +180,14 @@ nav a:hover::before {
   padding: 5%;
 }
 
-.title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #f16c6c;
-}
-
 .description {
   font-size: 16px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
+}
+img.img-responsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Or 'contain', depending on your design */
+  border-radius: 10px; /* Optional for rounded corners */
 }

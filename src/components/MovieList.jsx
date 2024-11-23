@@ -53,6 +53,7 @@ function MovieList({ rating }) {
                 poster_path={movie.poster_path}
                 vote_average={movie.vote_average}
                 id={movie.id}
+                release_date={movie.release_date}
               />
               <div></div>
             </div>
