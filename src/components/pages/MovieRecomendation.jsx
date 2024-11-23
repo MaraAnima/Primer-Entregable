@@ -22,8 +22,14 @@ function MovieRecomendation({ title, poster_path, plot }) {
           src={poster_path}
           alt={title}
         />
-        <div className="overlay">{title}</div>
-        <Modal open={isOpen} onClose={onCloseModal}>
+        <div className="overlay ">{title}</div>
+        <Modal
+          classNames={{ modal: "custom-modal", overlay: "custom-overlay" }}
+          open={isOpen}
+          onClose={onCloseModal}
+        >
+          <img src={poster_path} alt={title} className="container" />
+
           <h2>{title}</h2>
           <p>{plot}</p>
         </Modal>

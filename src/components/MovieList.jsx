@@ -11,7 +11,7 @@ function MovieList({ rating }) {
   const fetchMovies = async (reset = false) => {
     if (reset) {
       setMovies([]);
-      setPage(2);
+      setPage(1);
     }
 
     const response = await axios.get(

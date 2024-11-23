@@ -55,7 +55,16 @@ div.carousel-item img {
 .botonBuscar {
   color: #f16c6c;
   background-color: #3f0a0a;
-  border-color: #281212;
+  border-color: #f16c6c;
+  border-style: ridge;
+  border-radius: 5%;
+}
+.inputBuscar {
+  color: #f16c6c;
+  background-color: #3f0a0a;
+  border-color: #f16c6c;
+  border-style: ridge;
+  border-radius: 5%;
 }
 
 header::after {
@@ -112,14 +121,18 @@ nav a:hover::before {
 }
 
 /* RatingStar*/
-.Star {
-  color: white;
-}
 
+.cajita {
+  background-color: #35313195;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding: 3%;
+}
 .Box {
   width: 100%;
   font-size: 20px;
-
   padding: 20px;
   text-align: center;
 }
@@ -150,7 +163,6 @@ nav a:hover::before {
   background-position: center;
 }
 /*RecomendationsMovie*/
-
 .despuesveo {
   display: flex;
   flex-direction: column;
@@ -190,4 +202,13 @@ img.img-responsive {
   height: auto;
   object-fit: contain; /* Or 'contain', depending on your design */
   border-radius: 10px; /* Optional for rounded corners */
+}
+
+.custom-modal {
+  column-count: 2;
+  gap: 3em;
+  padding: 20px;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 2%;
 }
