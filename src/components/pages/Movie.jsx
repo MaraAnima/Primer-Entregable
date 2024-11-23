@@ -5,8 +5,8 @@ function Movie({ title, poster_path, overview }) {
   return (
     <>
       <MovieNavbar />
-      <div className="detailsBox">
-        <div className="movie-content">
+      <div className="despuesveo">
+        <div className="movie-content ">
           <img
             className="posterImg"
             src={`https://image.tmdb.org/t/p/w500${poster_path}`}
@@ -18,6 +18,7 @@ function Movie({ title, poster_path, overview }) {
           </div>
         </div>
       </div>
+
       <Foot />
     </>
   );
