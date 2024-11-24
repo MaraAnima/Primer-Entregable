@@ -17,7 +17,35 @@ div.carousel-item img {
 
   font-weight: 100;
 }
+.movie-content {
+  flex: 1;
+  display: flex;
+  width: 80%;
+  max-width: 150rem;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #0000004b;
+  color: #fff;
+  margin-bottom: 11%;
 
+  margin-top: 5%;
+}
+
+.movie-details {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
 .movie:hover {
   transform: scale(1.1); /* Apply zoom effect */
 }
@@ -25,18 +53,15 @@ div.carousel-item img {
 .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
-  opacity: 0; /* Make the overlay hidden initially */
-  bottom: 0; /* Position the overlay at the bottom */
-  left: 0; /* Align it to the left */
-  width: 100%; /* Make the overlay take full width */
-  height: 10%; /* You can adjust this to your preference (e.g., 25% of the card height) */
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
-  color: white;
-  transition: opacity 0.3s ease;
+  color: #fff;
 }
-
 .movie:hover .overlay {
   opacity: 1; /* Show the overlay on hover */
 }
@@ -168,35 +193,6 @@ nav a:hover::before {
   flex-direction: column;
 }
 
-.movie-content {
-  flex: 1;
-  display: flex;
-  width: 80%;
-  max-width: 150rem;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  background-color: #0000004b;
-  color: #fff;
-  margin-bottom: 11%;
-
-  margin-top: 5%;
-}
-
-.movie-details {
-  flex: 1;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5%;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-}
 img.img-responsive {
   max-width: 100%;
   height: auto;
@@ -211,4 +207,9 @@ img.img-responsive {
   background-color: #000000 !important;
   color: #ffffff !important;
   border-radius: 2%;
+}
+/*MovieDetails*/
+.title {
+  font-size: 100px;
+  font-family: "Video-Ezy", sans-serif;
 }

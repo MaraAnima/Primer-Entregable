@@ -1,7 +1,13 @@
 import Foot from "./Foot";
 import MovieNavbar from "./MovieNavbar";
 
-function Movie({ title, poster_path, overview, release_date }) {
+function Movie({
+  title,
+  poster_path,
+  overview,
+  release_date,
+  original_language,
+}) {
   return (
     <>
       <MovieNavbar />
@@ -14,8 +20,11 @@ function Movie({ title, poster_path, overview, release_date }) {
           />
           <div className="movie-details">
             <h1 className="title">{title}</h1>
+            <p class="card-text">
+              <small>{release_date}</small> Original lenguage:
+              {original_language}
+            </p>
             <p className="description">{overview}</p>
-            <h2>{release_date}</h2>
           </div>
         </div>
       </div>

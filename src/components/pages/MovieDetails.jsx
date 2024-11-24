@@ -24,6 +24,7 @@ function MovieDetails() {
   return (
     <>
       <Movie
+        original_language={movie.original_language}
         title={movie.title}
         poster_path={movie.poster_path}
         overview={movie.overview}
