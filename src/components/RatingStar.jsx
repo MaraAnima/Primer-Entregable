@@ -11,8 +11,8 @@ export function RatingStar({ rating, setRating }) {
   return (
     <div className="App">
       <div className="Star cajita Box">
-        Filtrar por rating:
-        <Rating onClick={handleRating} ratingValue={rating} />Y mas
+        Filter by Rating:
+        <Rating onClick={handleRating} ratingValue={rating} />& more
       </div>
     </div>
   );
