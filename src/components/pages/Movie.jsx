@@ -20,13 +20,17 @@ function Movie({
         />
         <div className="movie-details">
           <h1 className="title">{title}</h1>
-          <p class="card-text">
-            <small>{release_date}</small>
-            <small> Original lenguage:{original_language}</small>
-            <small>Rating :{vote_average}</small>
-          </p>
-          <div className="container caja">
+
+          <div className="container caja mt-4">
             <p className="description">{overview}</p>
+
+            <p class="card-text ">
+              <small className="boxit ">{release_date}</small>
+              <small className="boxit">
+                Original lenguage: {original_language}
+              </small>
+              <small className="boxit">Rating: {vote_average}</small>
+            </p>
           </div>
         </div>
       </div>

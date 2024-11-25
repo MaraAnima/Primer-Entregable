@@ -10,7 +10,7 @@ function Recomendations() {
       <MovieNavbar />
       <div className="container">
         <div className="row">
-          <h1 className="cajita Star mt-4">Recomendations</h1>
+          <h1 className="cajita  mt-4 recoleta">Recomendations</h1>
           {data.map((movie) => (
             <div className="col-3 mt-4 mb-4">
               <MovieRecomendation

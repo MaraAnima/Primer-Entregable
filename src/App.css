@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Glagolitic&display=swap");
 body {
   text-align: center;
   background-color: #281212;
@@ -41,11 +43,11 @@ div.carousel-item img {
 }
 
 .description {
-  font-size: 16px;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
-  font-family: "Alumni Sans Pinstripe", sans-serif;
   text-align: center;
+  font-family: Noto Sans Glagolitic;
 }
 .movie:hover {
   transform: scale(1.1); /* Apply zoom effect */
@@ -149,7 +151,7 @@ nav a:hover::before {
 /* RatingStar*/
 
 .cajita {
-  background-color: #35313195;
+  background-color: #00000095;
   width: 100%;
   text-align: center;
   color: white;
@@ -194,7 +196,10 @@ nav a:hover::before {
   display: flex;
   flex-direction: column;
 }
-
+.recoleta {
+  font-family: "Nosifer", sans-serif;
+  color: #690b0b;
+}
 img.img-responsive {
   max-width: 100%;
   height: auto;
@@ -216,7 +221,6 @@ img.img-responsive {
   font-size: 7rem;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-
   margin-bottom: 4%;
 }
 
@@ -229,20 +233,27 @@ img.img-responsive {
 }
 
 .caja {
-  margin-top: 5%;
   border-color: #2b1414;
   border-style: solid;
   padding: 1.5%;
   border-radius: 15px;
   box-shadow: 0 4px 15px black;
 }
+.boxit {
+  border-color: #2b1414;
+  border-style: solid;
+  padding: 1%;
+  border-radius: 15px;
+  background-color: #00000079;
+  font-family: Bebas Neue;
+}
 .posteR {
   border-right: 2px solid rgba(255, 255, 255, 0.566);
 }
 .recoTitle {
   font-size: 3.5rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Bebas Neue;
+
   font-weight: bolder;
   margin-bottom: 6%;
 }

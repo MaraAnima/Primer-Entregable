@@ -29,7 +29,7 @@ function MovieRecomendation({ title, poster_path, plot }) {
           onClose={onCloseModal}
         >
           <img src={poster_path} alt={title} className="container posteR" />
-          <div className="">
+          <div className="container">
             <h2 className="recoTitle">{title}</h2>
             <p>{plot}</p>
           </div>
