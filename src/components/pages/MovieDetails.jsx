@@ -10,11 +10,16 @@ function MovieDetails() {
 
   useEffect(() => {
     const moviePageFetch = async () => {
-      const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=33351da04ac1d34c5939d977f66571b0&language=en-US`
-      );
-      const data = response.data;
-      setMovie(data);
+      try {
+        const response = await axios.get(
+          `https://api.themoviedb.org/3/movie/${id}?api_key=33351da04ac1d34c5939d977f66571b0&language=en-US`
+        );
+        const data = response.data;
+        setMovie(data);
+      } catch (err) {
+        console.error("Error fetching movie details:", err);
+        setError("Failed to load movie details. Please try again later.");
+      }
     };
     moviePageFetch();
   }, [id]);

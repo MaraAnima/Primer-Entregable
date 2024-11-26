@@ -1,11 +1,12 @@
 import MovieNavbar from "./MovieNavbar";
 import Foot from "./Foot";
+
 function AboutUs() {
   return (
     <>
       <MovieNavbar />
 
-      <div className="defaultBox">
+      <div className="defaultBox row">
         <h1>About Us</h1>
         <p>
           Lore ipsum dolor sit amet consectetu adipisicing elit. Modi beatae id,

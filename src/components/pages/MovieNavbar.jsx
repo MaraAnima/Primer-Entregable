@@ -7,16 +7,16 @@ function MovieNavbar() {
   const [terminoBusqueda, setTerminoBusqueda] = useState(""); // Estado para almacenar el texto ingresado
 
   const alternarInput = () => {
-    setMostrarInput((prev) => !prev); // Alterna entre true y false
+    setMostrarInput((prev) => !prev);
   };
 
   const manejarCambioInput = (e) => {
-    setTerminoBusqueda(e.target.value); // Actualiza el término de búsqueda
+    setTerminoBusqueda(e.target.value);
   };
 
   const realizarBusqueda = () => {
     if (terminoBusqueda.trim() === "") {
-      alert("Por favor, ingrese un término para buscar."); // Mensaje si está vacío
+      alert("Por favor, ingrese un término para buscar.");
       return;
     }
     console.log(`Buscando películas con título: ${terminoBusqueda}`);

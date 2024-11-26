@@ -1,3 +1,4 @@
+import "../App.css";
 import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
 
@@ -10,7 +11,7 @@ export function RatingStar({ rating, setRating }) {
 
   return (
     <div className="App">
-      <div className="Star cajita Box">
+      <div className="recoleta cajita Box">
         Filter by Rating:
         <Rating onClick={handleRating} ratingValue={rating} />& more
       </div>
