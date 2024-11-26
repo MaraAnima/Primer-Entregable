@@ -256,11 +256,3 @@ img.img-responsive {
   font-weight: bolder;
   margin-bottom: 6%;
 }
-
-.description{
-  box-shadow: "rgb(204, 219, 232) 3px 3px 6px 0px inset",
-  width: "200px",
-  height: "200px",
-  backgroundColor: "white",
-  borderRadius: "8px"
-}

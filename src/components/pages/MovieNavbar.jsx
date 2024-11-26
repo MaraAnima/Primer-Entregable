@@ -45,7 +45,7 @@ function MovieNavbar() {
                         <input
                           type="text"
                           className="inputBuscar"
-                          placeholder="Buscar películas por título..."
+                          placeholder="Search by title..."
                           value={terminoBusqueda}
                           onChange={manejarCambioInput}
                           onKeyDown={(e) => {
