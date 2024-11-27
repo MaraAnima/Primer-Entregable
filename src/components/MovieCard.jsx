@@ -10,7 +10,6 @@ function MovieCard({ title, poster_path, id }) {
             className="card-img-top"
             alt={title}
           />
-          <div className="overlay">{title}</div>
         </Link>
       </div>
     </div>
