@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import hseason from "../assets/img/hseason.png";
+import video1 from "../assets/img/video1.png";
 import BuscáHeader from "../assets/img/BuscáHeader.png";
-import TusHeader from "../assets/img/TusHeader.png";
-
+import video2 from "../assets/img/video2.png";
 function MovieBanner() {
   useEffect(() => {
     const carouselElement = document.querySelector(
@@ -38,11 +37,13 @@ function MovieBanner() {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img className="d-block w-100" src={hseason} alt="First slide" />
+          <img className="d-block w-100" src={video1} alt="First slide" />
         </div>
+
         <div className="carousel-item">
-          <img className="d-block w-100" src={TusHeader} alt="Second slide" />
+          <img className="d-block w-100" src={video2} alt="Second slide" />
         </div>
+
         <div className="carousel-item">
           <img className="d-block w-100" src={BuscáHeader} alt="Third slide" />
         </div>
