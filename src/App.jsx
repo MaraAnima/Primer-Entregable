@@ -8,12 +8,13 @@ import Home from "./components/pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Recomendations from "./components/pages/Recomendations";
 import Search from "./components/pages/Search";
-
+import { useState } from "react";
 function App() {
+  const [movies, setMovies] = useState([]);
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Home movies={movies} setMovies={setMovies} />,
     },
     {
       path: "/about-us",
@@ -22,6 +23,10 @@ function App() {
     {
       path: "/contact",
       element: <Contact />,
+    },
+    {
+      path: "/search/movie/:id",
+      element: <MovieDetails />,
     },
     {
       path: "/movie/:id",
@@ -33,7 +38,7 @@ function App() {
     },
     {
       path: "/search",
-      element: <Search />,
+      element: <Search setMovies={setMovies} />,
     },
     {
       path: "*",

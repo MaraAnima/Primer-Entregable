@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logoHack1 from "../../assets/img/logoHack1.png";
 import Search from "./Search";
 
-function MovieNavbar({ movies, setMovies }) {
+function MovieNavbar({ setMovies }) {
   return (
     <>
       <div className="header">
@@ -16,7 +16,9 @@ function MovieNavbar({ movies, setMovies }) {
               <nav>
                 <ul>
                   <li>
-                    <Search movies={movies} setMovies={setMovies} />
+                    <Link to="/search">
+                      <button className="botonBuscar">🔍︎</button>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/">Home</Link>
