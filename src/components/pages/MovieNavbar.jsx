@@ -1,28 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logoHack1 from "../../assets/img/logoHack1.png";
+import Search from "./Search";
 
-function MovieNavbar() {
-  const [mostrarInput, setMostrarInput] = useState(false); // Estado para controlar visibilidad del input
-  const [terminoBusqueda, setTerminoBusqueda] = useState(""); // Estado para almacenar el texto ingresado
-
-  const alternarInput = () => {
-    setMostrarInput((prev) => !prev);
-  };
-
-  const manejarCambioInput = (e) => {
-    setTerminoBusqueda(e.target.value);
-  };
-
-  const realizarBusqueda = () => {
-    if (terminoBusqueda.trim() === "") {
-      alert("Por favor, ingrese un término para buscar.");
-      return;
-    }
-    console.log(`Buscando películas con título: ${terminoBusqueda}`);
-    // Aquí podrías realizar una redirección o llamada a la API de búsqueda.
-  };
-
+function MovieNavbar({ movies, setMovies }) {
   return (
     <>
       <div className="header">
@@ -35,25 +16,7 @@ function MovieNavbar() {
               <nav>
                 <ul>
                   <li>
-                    <div className="search">
-                      {/* Botón para mostrar/ocultar el input */}
-                      <button className="botonBuscar" onClick={alternarInput}>
-                        🔍︎
-                      </button>
-                      {/* Input que aparece/desaparece */}
-                      {mostrarInput && (
-                        <input
-                          type="text"
-                          className="inputBuscar"
-                          placeholder="Search by title..."
-                          value={terminoBusqueda}
-                          onChange={manejarCambioInput}
-                          onKeyDown={(e) => {
-                            if (e.key === "Enter") realizarBusqueda(); // Buscar al presionar Enter
-                          }}
-                        />
-                      )}
-                    </div>
+                    <Search movies={movies} setMovies={setMovies} />
                   </li>
                   <li>
                     <Link to="/">Home</Link>

@@ -7,6 +7,7 @@ import Error404 from "./components/pages/Error404";
 import Home from "./components/pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Recomendations from "./components/pages/Recomendations";
+import Search from "./components/pages/Search";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ function App() {
     {
       path: "/recomendations",
       element: <Recomendations />,
+    },
+    {
+      path: "/search",
+      element: <Search />,
     },
     {
       path: "*",

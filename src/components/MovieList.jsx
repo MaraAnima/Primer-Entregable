@@ -3,8 +3,7 @@ import MovieCard from "./MovieCard";
 import InfiniteScroll from "react-infinite-scroll-component";
 import axios from "axios";
 
-function MovieList({ rating }) {
-  const [movies, setMovies] = useState([]);
+function MovieList({ rating, movies, setMovies }) {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
