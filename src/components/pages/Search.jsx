@@ -13,7 +13,7 @@ function Search({ setMovies }) {
 
   const handleSearch = async () => {
     if (query.trim() === "") {
-      alert("Por favor, ingresa un término para buscar.");
+      alert("Please, enter a title to search.");
       return;
     }
 

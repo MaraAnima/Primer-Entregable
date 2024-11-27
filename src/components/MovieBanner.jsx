@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import video1 from "../assets/img/video1.png";
 import BuscáHeader from "../assets/img/BuscáHeader.png";
 import video2 from "../assets/img/video2.png";
+import { Link } from "react-router-dom";
 function MovieBanner() {
   useEffect(() => {
     const carouselElement = document.querySelector(
@@ -39,11 +40,11 @@ function MovieBanner() {
         <div className="carousel-item active">
           <img className="d-block w-100" src={video1} alt="First slide" />
         </div>
-
-        <div className="carousel-item">
-          <img className="d-block w-100" src={video2} alt="Second slide" />
-        </div>
-
+        <Link to="/recomendations">
+          <div className="carousel-item">
+            <img className="d-block w-100" src={video2} alt="Second slide" />
+          </div>
+        </Link>
         <div className="carousel-item">
           <img className="d-block w-100" src={BuscáHeader} alt="Third slide" />
         </div>
