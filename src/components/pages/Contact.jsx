@@ -6,12 +6,35 @@ function Contact() {
       <MovieNavbar />
       <div className="defaultBox ">
         <h1>Contact</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi beatae
-          id, soluta iure expedita corrupti molestiae. Magni sequi sint beatae
-          ratione corporis illum est debitis error iusto, ea esse laboriosam!
-          Molestias quo totam commodi pariatur est aliquam nam, saepe quibusdam!
-        </p>
+
+        <ul>
+          <li>
+            <a
+              className="contactus"
+              href="https://uy.linkedin.com/in/mara-silva-9324ab205"
+            >
+              Mara Silva
+            </a>
+          </li>
+          <li>
+            <a
+              className="contactus"
+              href="https://uy.linkedin.com/in/sara-olivera-805402219?trk=people-guest_people_search-card"
+            >
+              Sara Olivera
+            </a>
+          </li>
+          <li>
+            <a href="https://uy.linkedin.com/in/lucas-sanmartino-65812122a/en?trk=people-guest_people_search-card">
+              Lucas Sanmartino
+            </a>
+          </li>
+          <li>
+            <a href="https://uy.linkedin.com/in/natayha-raicoff ">
+              Natayha Raicoff
+            </a>
+          </li>
+        </ul>
       </div>
       <Foot />
     </>

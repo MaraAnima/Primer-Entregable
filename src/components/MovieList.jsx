@@ -5,7 +5,6 @@ import axios from "axios";
 
 function MovieList({ rating, movies, setMovies }) {
   const [page, setPage] = useState(1);
-  // const [hasMore, setHasMore] = useState(true);
 
   const fetchMovies = async (reset = false) => {
     try {
@@ -19,7 +18,6 @@ function MovieList({ rating, movies, setMovies }) {
       );
       const data = response.data;
       setMovies((prevMovies) => [...prevMovies, ...data.results]);
-      // setHasMore(data.results.length > 0);
     } catch (error) {
       console.error("Error al obtener las películas:", error);
       alert("Error al buscar películas. Intenta nuevamente.");
