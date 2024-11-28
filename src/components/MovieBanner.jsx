@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import video1 from "../assets/img/video1.png";
-import BuscáHeader from "../assets/img/BuscáHeader.png";
 import video2 from "../assets/img/video2.png";
+import hack1 from "../assets/img/hack1";
 import { Link } from "react-router-dom";
 function MovieBanner() {
   useEffect(() => {
@@ -46,7 +46,7 @@ function MovieBanner() {
           </div>
         </Link>
         <div className="carousel-item">
-          <img className="d-block w-100" src={BuscáHeader} alt="Third slide" />
+          <img className="d-block w-100" src={hack1} alt="Third slide" />
         </div>
       </div>
       <a
