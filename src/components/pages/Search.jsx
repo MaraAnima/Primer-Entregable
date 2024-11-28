@@ -39,8 +39,9 @@ function Search({}) {
       <MovieNavbar />
       <div className="container">
         <div className="search">
-          <InputGroup className="mb-3 mt-4">
+          <InputGroup className="mb-3 mt-4" input>
             <Form.Control
+              className="custom-input"
               aria-label="Buscar película"
               aria-describedby="button-addon1"
               value={query}
