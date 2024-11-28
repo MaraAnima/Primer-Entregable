@@ -50,7 +50,7 @@ div.carousel-item img {
   font-family: Noto Sans Glagolitic;
 }
 .movie:hover {
-  transform: scale(1.1); /* Apply zoom effect */
+  transform: scale(1.1);
 }
 
 /* MovieNavbar*/
@@ -150,18 +150,14 @@ nav a:hover::before {
 }
 /*About Us y Contact*/
 
-/* General Container */
-
-/* Default Box */
 .defaultBox {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 7%;
   padding: 5%;
   border-radius: 10px;
-  color: rgb(255, 255, 255); /* Ensure text is visible on a dark background */
+  color: rgb(255, 255, 255);
 }
 
-/* Team Images */
 .fotos {
   border-radius: 50%;
   width: 100px;
@@ -169,15 +165,13 @@ nav a:hover::before {
   object-fit: cover;
 }
 
-/* Card Position */
 .card-position {
   display: flex;
-  justify-content: space-between; /* Adjust spacing dynamically */
-  flex-wrap: wrap; /* Enable wrapping for smaller screens */
-  gap: 20px; /* Space between cards */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Centered Card */
 .card-position-center {
   display: flex;
   justify-content: center;
@@ -186,24 +180,23 @@ nav a:hover::before {
   height: auto;
 }
 
-/* Individual Card */
 .card-position-center {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  width: 100%; /* Container takes full width of the parent */
-  height: 60vh; /* Optional: Makes the container take the full height of the viewport */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
 }
 
 .card {
-  text-align: center; /* Centers text inside the card */
-  width: 20rem; /* You can adjust the width of the card */
-  background-color: #0000007a; /* Optional: Adds space between cards if there are multiple */
+  text-align: center;
+  width: 20rem;
+  background-color: #0000007a;
 }
 
 .fotos {
-  width: 100%; /* Makes the image fill the width of the card */
-  height: auto; /* Keeps the image's aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 /*Footer*/
@@ -231,8 +224,8 @@ nav a:hover::before {
 img.img-responsive {
   max-width: 100%;
   height: auto;
-  object-fit: contain; /* Or 'contain', depending on your design */
-  border-radius: 10px; /* Optional for rounded corners */
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .custom-modal {

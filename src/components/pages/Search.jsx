@@ -59,7 +59,7 @@ function Search({}) {
             </Button>
           </InputGroup>
 
-          {movies.length > 0 && <MovieResults movies={movies} />}
+          <MovieResults movies={movies} />
         </div>
       </div>
     </>
