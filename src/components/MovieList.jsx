@@ -57,7 +57,6 @@ function MovieList({ rating, movies, setMovies }) {
                 vote_average={movie.vote_average}
                 id={movie.id}
               />
-              <div></div>
             </div>
           ))}
         </div>

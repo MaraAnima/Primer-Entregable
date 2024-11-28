@@ -10,11 +10,11 @@ function MovieBanner() {
     );
 
     const carousel = new window.bootstrap.Carousel(carouselElement, {
-      interval: 5000 /* el periodo de tiempo en el cual se cambian las imagenes*/,
-      ride: "carousel" /* le dice que cuando cargue la pagina empieza el evento*/,
+      interval: 5000,
+      ride: "carousel",
     });
 
-    carousel.cycle(); /* Es para que el slide sea automatico*/
+    carousel.cycle();
   }, []);
 
   return (

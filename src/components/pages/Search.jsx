@@ -24,7 +24,7 @@ function Search({}) {
       setMovies(response.data.results);
     } catch (error) {
       console.error("Error al obtener las películas:", error);
-      alert("Error finding the movie, please enter a title");
+      alert("Error finding the movie, please try again");
     }
   };
 

@@ -151,11 +151,6 @@ nav a:hover::before {
 /*About Us y Contact*/
 
 /* General Container */
-.container {
-  margin: 0 auto;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 800;
-}
 
 /* Default Box */
 .defaultBox {
@@ -187,9 +182,8 @@ nav a:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Full width of the container */
-  height: auto; /* Adjust to content height */
-  padding: 20px; /* Add spacing */
+  width: 100%;
+  height: auto;
 }
 
 /* Individual Card */
@@ -198,13 +192,12 @@ nav a:hover::before {
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   width: 100%; /* Container takes full width of the parent */
-  height:60vh; /* Optional: Makes the container take the full height of the viewport */
+  height: 60vh; /* Optional: Makes the container take the full height of the viewport */
 }
 
 .card {
   text-align: center; /* Centers text inside the card */
   width: 20rem; /* You can adjust the width of the card */
-  margin: 10px;
   background-color: #0000007a; /* Optional: Adds space between cards if there are multiple */
 }
 
@@ -290,4 +283,9 @@ img.img-responsive {
 
   font-weight: bolder;
   margin-bottom: 6%;
+}
+.titulo h1 {
+  font-size: 10rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
 }
