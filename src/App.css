@@ -150,36 +150,68 @@ nav a:hover::before {
 }
 /*About Us y Contact*/
 
+/* General Container */
 .container {
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
 }
 
+/* Default Box */
 .defaultBox {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 7%;
   padding: 5%;
   border-radius: 10px;
+  color: white; /* Ensure text is visible on a dark background */
 }
+
+/* Team Images */
 .fotos {
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
+
+/* Card Position */
 .card-position {
   display: flex;
-  justify-content: space-between; /* or space-around, depending on the desired spacing */
-  gap: 20px;
+  justify-content: space-between; /* Adjust spacing dynamically */
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  gap: 20px; /* Space between cards */
 }
+
+/* Centered Card */
+.card-position-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust to content height */
+  padding: 20px; /* Add spacing */
+}
+
+/* Individual Card */
 .card-position-center {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  width: 100%; /* Allow it to take the full width of the parent container */
-  height: 100vh; /* Optional: Makes the container take full height of the viewport */
+  width: 100%; /* Container takes full width of the parent */
+  height: 100vh; /* Optional: Makes the container take the full height of the viewport */
 }
+
 .card {
-  background-color: #000000b2;
+  text-align: center; /* Centers text inside the card */
+  width: 200px; /* You can adjust the width of the card */
+  margin: 10px; /* Optional: Adds space between cards if there are multiple */
 }
+
+.fotos {
+  width: 100%; /* Makes the image fill the width of the card */
+  height: auto; /* Keeps the image's aspect ratio */
+}
+
 /*Footer*/
 .footer {
   background-color: #3f0a0a;
