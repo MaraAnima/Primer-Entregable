@@ -163,7 +163,7 @@ nav a:hover::before {
   margin: 7%;
   padding: 5%;
   border-radius: 10px;
-  color: white; /* Ensure text is visible on a dark background */
+  color: rgb(255, 255, 255); /* Ensure text is visible on a dark background */
 }
 
 /* Team Images */
@@ -198,13 +198,14 @@ nav a:hover::before {
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   width: 100%; /* Container takes full width of the parent */
-  height: 100vh; /* Optional: Makes the container take the full height of the viewport */
+  height:50vh; /* Optional: Makes the container take the full height of the viewport */
 }
 
 .card {
   text-align: center; /* Centers text inside the card */
-  width: 200px; /* You can adjust the width of the card */
-  margin: 10px; /* Optional: Adds space between cards if there are multiple */
+  width: 20rem; /* You can adjust the width of the card */
+  margin: 10px;
+  background-color: #0000007a; /* Optional: Adds space between cards if there are multiple */
 }
 
 .fotos {

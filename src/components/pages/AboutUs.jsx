@@ -11,13 +11,14 @@ function AboutUs() {
           <div className="">
             <h1>Our team</h1>
           </div>
-          <div className="card-position-center">
-            <div className="card">
-              <img src={Paloma} alt="" className="fotos" />
-              <h3>The team together</h3>
-            </div>
-          </div>
+
           <div className="card-position ">
+            <div className="card-position-center">
+              <div className="card">
+                <img src={Paloma} alt="" className="fotos" />
+                <h3>The team together</h3>
+              </div>
+            </div>
             <div className="card">
               <img src={Paloma} alt="" className="fotos" />
               <h3>Sara</h3>
