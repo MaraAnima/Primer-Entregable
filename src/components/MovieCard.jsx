@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function MovieCard({ title, poster_path, id }) {
+function MovieCard({ title, poster_path, id, vote_average }) {
   return (
     <div className="container">
       <div className=" movie">
@@ -11,6 +11,7 @@ function MovieCard({ title, poster_path, id }) {
             alt={title}
           />
         </Link>
+        <div className="text-white">{vote_average}</div>
       </div>
     </div>
   );

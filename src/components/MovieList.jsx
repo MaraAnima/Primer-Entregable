@@ -5,7 +5,7 @@ import axios from "axios";
 
 function MovieList({ rating, movies, setMovies }) {
   const [page, setPage] = useState(1);
-  const [hasMore, setHasMore] = useState(true);
+  // const [hasMore, setHasMore] = useState(true);
 
   const fetchMovies = async (reset = false) => {
     try {
@@ -19,7 +19,7 @@ function MovieList({ rating, movies, setMovies }) {
       );
       const data = response.data;
       setMovies((prevMovies) => [...prevMovies, ...data.results]);
-      setHasMore(data.results.length > 0);
+      // setHasMore(data.results.length > 0);
     } catch (error) {
       console.error("Error al obtener las películas:", error);
       alert("Error al buscar películas. Intenta nuevamente.");
@@ -30,13 +30,8 @@ function MovieList({ rating, movies, setMovies }) {
   }, [rating]);
 
   const fetchMoreMovies = () => {
-    if (hasMore) {
-      setPage((prevPage) => {
-        const nextPage = prevPage + 1;
-        fetchMovies();
-        return nextPage;
-      });
-    }
+    setPage((prevPage) => prevPage + 1);
+    fetchMovies();
   };
 
   return (
@@ -44,7 +39,7 @@ function MovieList({ rating, movies, setMovies }) {
       <InfiniteScroll
         dataLength={movies.length}
         next={fetchMoreMovies}
-        hasMore={hasMore}
+        hasMore={true}
         loader={<h4>Loading...</h4>}
         endMessage={<p>No more movies!</p>}
       >
