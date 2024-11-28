@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import video1 from "../assets/img/video1.png";
 import video2 from "../assets/img/video2.png";
-import hack1 from "../assets/img/hack1";
+import hack1 from "../assets/img/hack1.png";
 import { Link } from "react-router-dom";
 function MovieBanner() {
   useEffect(() => {
