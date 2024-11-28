@@ -38,7 +38,7 @@ function App() {
     },
     {
       path: "/search",
-      element: <Search setMovies={setMovies} />,
+      element: <Search />,
     },
     {
       path: "*",

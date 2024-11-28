@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logoHack1 from "../../assets/img/logoHack1.png";
 import Search from "./Search";
 
-function MovieNavbar({ setMovies }) {
+function MovieNavbar({ setMovies, movies }) {
   return (
     <>
       <div className="header">

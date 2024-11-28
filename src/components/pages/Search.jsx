@@ -7,9 +7,9 @@ import MovieResults from "./MovieResults";
 import MovieNavbar from "./MovieNavbar";
 import Foot from "./Foot";
 
-function Search({ setMovies }) {
+function Search({}) {
   const [query, setQuery] = useState("");
-  const [movies, setMoviesState] = useState([]);
+  const [movies, setMovies] = useState([]);
 
   const handleSearch = async () => {
     if (query.trim() === "") {
@@ -21,10 +21,10 @@ function Search({ setMovies }) {
       const response = await axios.get(
         `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1&api_key=33351da04ac1d34c5939d977f66571b0`
       );
-      setMoviesState(response.data.results);
+      setMovies(response.data.results);
     } catch (error) {
       console.error("Error al obtener las películas:", error);
-      alert("Error al buscar películas. Intenta nuevamente.");
+      alert("Error finding the movie, please enter a title");
     }
   };
 
