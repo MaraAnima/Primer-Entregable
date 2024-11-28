@@ -39,7 +39,7 @@ function Search({}) {
       <MovieNavbar />
       <div className="container">
         <div className="search">
-          <InputGroup className="mb-3 mt-4" input>
+          <InputGroup className="mb-3 mt-4 input">
             <Form.Control
               className="custom-input"
               aria-label="Buscar película"

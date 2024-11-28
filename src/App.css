@@ -282,3 +282,15 @@ img.img-responsive {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
+
+#button-addon1 {
+  border-color: #3f0a0a;
+  color: white;
+}
+
+.custom-input {
+  border-color: #3f0a0a;
+  background-color: #00000049;
+  color: white !important;
+  font-weight: bold;
+}
